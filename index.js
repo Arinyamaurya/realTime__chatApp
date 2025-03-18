@@ -10,7 +10,7 @@ app.use(express.static("public"))
 io.on('connection',(socket)=>{
     console.log("New user connected");
     socket.on("user-message",(data)=>{
-       io.emit("message",data) 
+       socket.broadcast.emit("message",data) 
     })
     socket.on("disconnect", () => {
         console.log("User disconnected");
@@ -18,4 +18,4 @@ io.on('connection',(socket)=>{
     
 })
 
-server.listen(9000,()=>console.log(`server stared at port 9000`))
+server.listen(9000,()=>console.log("server stared at port 9000"))
