@@ -1,5 +1,5 @@
 📝 Real-Time Chat Application - README
-![Chat Application Interface](./images/screenshot.png)
+![Chat Application Interface](/screenshot.png)
 
 
 
