@@ -1,5 +1,7 @@
 📝 Real-Time Chat Application - README
-Chat App Screenshot (Add your screenshot image when available)
+![Chat Application Interface](./images/screenshot.png)
+
+
 
 # 🌟 Features
 =>Real-time messaging using Socket.IO
