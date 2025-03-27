@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
    // Replace your socket initialization with:
-const socket = io('http://localhost:3000', {
+const socket = io('https://vercel.com/arinya-mauryas-projects/real-time-chat-app', {
   transports: ['websocket'] // Force WebSocket only
 }); 
     const messagesContainer = document.getElementById('messages');
