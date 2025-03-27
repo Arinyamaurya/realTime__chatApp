@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.socket.io/4.7.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="chat-app">
+        <!-- Header -->
+        <header class="chat-header">
+            <div class="header-content">
+                <img src="logo.png" alt="Logo" class="logo">
+                <h1>WebChat</h1>
+                <div class="connection-status">
+                    <span id="statusIndicator" class="status-offline"></span>
+                    <small id="statusText">Offline</small>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Messages -->
+        <div class="chat-messages" id="messages">
+            <!-- Messages will appear here -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message..." autocomplete="off">
+            <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="/script.js" defer></script>
+</body>
+</html>
