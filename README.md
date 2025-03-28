@@ -4,18 +4,18 @@
 
 
 # 🌟 Features
-=>Real-time messaging using Socket.IO
-=>User connection/disconnection notifications
-=>Online status indicators
-=>Clean, responsive UI
-=>Typing indicators
-=>Message timestamps
-=>Persistent message history (last 100 messages)
+#Real-time messaging using Socket.IO
+#User connection/disconnection notifications
+#Online status indicators
+#Clean, responsive UI
+#Typing indicators
+#Message timestamps
+#Persistent message history (last 100 messages)
 
 # 🛠️ Technologies Used
-=>Frontend: HTML5, CSS3, JavaScript
-=>Backend: Node.js, Express
-=>Real-Time Communication: Socket.IO
+#Frontend: HTML5, CSS3, JavaScript
+#Backend: Node.js, Express
+#Real-Time Communication: Socket.IO
 
 
 # 🚀 Getting Started
@@ -34,10 +34,10 @@ real-time-chat/
 └── README.md
 
 # 📈 Future Improvements
-=>Add user authentication
-=>Implement chat rooms/channels
-=>Add message persistence with MongoDB
-=>Implement file/image sharing
-=>Add emoji support
-=>Create mobile app version
+#Add user authentication
+#Implement chat rooms/channels
+#Add message persistence with MongoDB
+#Implement file/image sharing
+#Add emoji support
+#Create mobile app version
 
