@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
    // Replace your socket initialization with:
-const socket = io('http://localhost:3000', {
+const socket = io( {
   transports: ['websocket'] // Force WebSocket only
 }); 
     const messagesContainer = document.getElementById('messages');
