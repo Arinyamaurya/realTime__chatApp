@@ -1,13 +1,17 @@
-const express=require('express');
+const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
+const path = require('path');
 
 const app = express();
-app.use(express.static(__dirname));
+
+// Serve static files from the "public" folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000", // Adjust in production
+    origin: "*", // For production, replace * with your frontend URL
     methods: ["GET", "POST"]
   }
 });
@@ -54,6 +58,7 @@ io.on('connection', (socket) => {
   }
 });
 
+// Use Render or platform-defined port
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
